@@ -1,0 +1,23 @@
+/* Correct usage of calc() demonstrating explicit unit usage and mindful nesting */
+#container {
+  width: calc(50% - 10px);
+}
+
+#element {
+  width: calc( (100vw - 20px) / 3 ); /*Explicit parentheses for nested expressions*/
+}
+
+/*fallback for older browsers that don't support calc()*/
+#element {
+  width: 30%;
+}
+@supports (width: calc(100vw - 20px)) {
+  #element {
+  width: calc( (100vw - 20px) / 3 );
+  }
+}
+/* Always use compatible units.  Mix units only as intended.*/
+.element2 {
+  height: calc(100px + 2em);
+}
+/* Avoid overly complex expressions, if possible, for maintainability and browser compatibility*/
