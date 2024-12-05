@@ -1,0 +1,2 @@
+# CSS `calc()` Issues
+This repository demonstrates common issues and unexpected behavior related to the CSS `calc()` function.  The `bug.css` file showcases examples of incorrect usage that can lead to errors or unexpected layout. The `bugSolution.css` file provides corrected versions and best practices for using `calc()`.  Refer to the comments within the CSS files for detailed explanations of the problems and their solutions.
